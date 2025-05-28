@@ -38,3 +38,53 @@
 .top-bar a{
     text-decoration: none; color: #FFFFFF;
  }
+
+ .logo{
+    height: 100px; width: auto;
+ }
+ .drop-shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ }
+ header nav .nav-item{
+    padding-left: 20px;padding-right: 20px;
+ }
+  header nav .nav-item .nav-link{
+    color: #F0AB50; font-weight: 600;
+  }
+   header nav .nav-item .nav-link:hover{
+    color: #7256C3;  
+  }
+  .navbar-expand-sm .navbar-nav .dropdown-menu{
+    background-color: #7256C3; color: #FFFFFF!important;  width: 300px;
+  }
+    .navbar-expand-sm .navbar-nav .dropdown-menu .dropdown-item{
+      color: #FFFFFF!important;    
+    }
+      .navbar-expand-sm .navbar-nav .dropdown-menu .dropdown-item:hover{
+      color: #FFFFFF!important;  background-color: #F0AB50;   
+    }
+
+  .btn-donate-now{
+    height: 58px;
+  }
+.dropdown-toggle{
+    position: relative;
+}
+  .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: ""; border: 0px;
+  background-image: url('../images/icon-dropdown.png');
+  background-repeat: no-repeat; background-position: right top; width: 14px; height: 9px; position: absolute; right: -12px; top: 16px;
+}
+
+.dropdown-toggle:hover::after,
+.dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+    background-image: url('../images/icon-dropdown-hover.png');
+  background-repeat: no-repeat; background-position: right top; width: 14px; height: 9px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #7256C3; 
+}
