@@ -29,7 +29,7 @@
               </div>
           </div>
       </div>
-      <nav class="navbar navbar-expand-sm navbar-light drop-shadow d-xl-flex align-items-xl-center">
+      <nav class="navbar navbar-expand-sm navbar-light drop-shadow bg-white d-xl-flex align-items-xl-center" id="mainNavbar">
   <div class="container">
     <a class="navbar-brand" href="javascript:void(0)"><img src="assets/images/logo.png" class="logo" alt="" title="" width="" height=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -73,7 +73,7 @@
       </ul>
       <ul  class="navbar-nav ">
         <li> 
-          <a   href="javascript:void(0)"><img src="assets/images/btn-donate-now.png" class="btn-donate-now" alt="" title="" width="" height=""></a> 
+          <a href="javascript:void(0)"><img src="assets/images/btn-donate-now.png" class="btn-donate-now" alt="" title="" width="" height=""></a> 
         </li>
       </ul>
      
@@ -95,6 +95,84 @@
           <div class="item">
               <img src="assets/images/main-banner-4.png" alt="" title="" height="" width="">
           </div>
+      </div>
+  </section>
+  <section>
+      <div class="container">
+          <div class="donation-box-area drop-shadow">
+                <div class="row">
+                   <div class="col-xl-5 col-12">
+                        <h2>Make a Donation</h2>
+                        <p>
+                          Support the Temple’s Growth  Your Donation Builds a Sacred Future.
+                        </p>
+                   </div>
+                   <div class="col-xl-7 col-12">
+                      <div class="selction-group">
+                             <label class="option">
+                              <input type="radio" name="optradio" value="275"><span class="btn btn-warning btn-option">Rs.2100</span>
+                            </label>
+                            <label class="option">
+                              <input type="radio" name="optradio" value="275"><span class="btn btn-warning btn-option">Rs.3500</span>
+                            </label>
+                            <label class="option">
+                              <input type="radio" name="optradio" value="275"><span class="btn btn-warning btn-option">Rs.7000</span>
+                            </label>
+                            <label class="option">
+                              <input type="radio" name="optradio" value="275"><span class="btn btn-warning btn-option">Custom</span>
+                            </label>
+                      </div>
+                      <div class="row pt-3 pb-3">
+                        <div class="col-xl-6 col-12">
+                          <div class="custom-amount-area">
+                              <div class="custom-amount-area-prefix">Rs.</div>
+                              <input type="text">
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-12">
+                          <input type="submit" class="btn-submit-form" value="DONATE NOW">
+                        </div>
+                      </div>
+                   </div>
+                </div>
+          </div>
+      </div>
+  </section>
+  <section class="section-padding">
+      <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-12">
+                <img src="assets/images/img-become-a-donar.png" class="img-fluid updown-animation " alt="" title="" width="" height="">
+            </div>
+            <div class="col-xl-6 col-12">
+                <div class="section-sub-heading">Welcome</div>
+                <h2 class="section-heading">
+                    Sri Sri <span>Radha Mohan Madan</span> Temple
+                </h2>
+                <p class="text-justify">
+                  ISKCON Wavecity Temple, also known as Sri Sri Radha Madan Mohan Mandir, is a peaceful place dedicated to Vedic learning & spiritual growth. It was established with the guidance of HH Gopal Krishna Goswami Maharaj and opened its doors to the public on January 31, 2007, with a grand welcome by over 8,000 devotees. To honor the temple, the Mayor of Ghaziabad named the temple area “Hare Krishna Square” and the road leading to it “Hare Krishna Marg.
+                </p>
+                <p class="text-justify">
+                  The ISKCON Wavecity Temple is still under construction, and your heartfelt contribution can help us bring this sacred place to life sooner. 
+                </p>
+                <a href="javascript:void(0)"><img src="assets/images/btn-learn-more.png" class="btn-learn-more" alt="" title="" width="" height=""></a> 
+            </div>
+          </div>
+      </div>
+  </section>
+  <section>
+      <div class="container">
+            <div class="row">
+              <div class="col-xl-12 col-12 text-center">
+                 <div class="section-sub-heading">Serve the Lord, Share the Mercy</div>
+                  <h2 class="section-heading">
+                      Support the <span>Sacred</span> Vision of <span>ISKCON Wavecity</span> 
+                  </h2>
+                  <p class="text-center">
+                      “Whatever you give whether charity, service, or love, offer it unto Me with devotion." Bhagavad-Gita (9.27). Your heartfelt contributions help manifest this abode of Sri Krishna. Support us in this sacred mission!
+                  </p>
+              </div>
+            </div>
       </div>
   </section>
   <script src="assets/js/jquery.min.js"></script>
@@ -120,6 +198,17 @@
         }
     }
 });
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('mainNavbar');
+    if (window.scrollY > 100) {
+      navbar.classList.add('sticky');
+      document.body.classList.add('nav-fixed-padding');
+    } else {
+      navbar.classList.remove('sticky');
+      document.body.classList.remove('nav-fixed-padding');
+    }
+  });
     </script>
 </body>
 </html>
